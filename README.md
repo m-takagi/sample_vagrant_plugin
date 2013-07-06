@@ -1,6 +1,6 @@
 # SampleVagrantPlugin
 
-TODO: Write a gem description
+The vagrant plugin that shows the amount of the free memory
 
 ## Installation
 
@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ vagrant free-memory
+
+Shows the amount of the free memory available in kilobytes.
 
 ## Contributing
 
