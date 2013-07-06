@@ -1,5 +1,7 @@
 require "sample_vagrant_plugin/version"
 
 module SampleVagrantPlugin
-  # Your code goes here...
+  class Plugin < Vagrant.plugin("2")
+    name "sample vagrant plugin"
+  end
 end
