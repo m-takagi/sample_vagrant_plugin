@@ -8,5 +8,10 @@ module SampleVagrantPlugin
       require_relative "sample_vagrant_plugin/command"
       Command
     end
+
+    config "my_key" do
+      require_relative "sample_vagrant_plugin/config"
+      Config
+    end
   end
 end
