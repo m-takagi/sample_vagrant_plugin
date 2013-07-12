@@ -11,5 +11,15 @@ module SampleVagrantPlugin
     def finalize!
       @value = nil if @value == UNSET_VALUE
     end
+
+    def validate(machine)
+      errors = []
+
+      if !@value
+        errors << "Value must be set."
+      end
+
+      return {"my_key" => errors}
+    end
   end
 end
