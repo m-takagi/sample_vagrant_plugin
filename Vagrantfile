@@ -9,4 +9,5 @@ end
 
 Vagrant.configure("2") do |config|
   config.my_key.value = 12
+  config.vm.provision "apt_get"
 end
