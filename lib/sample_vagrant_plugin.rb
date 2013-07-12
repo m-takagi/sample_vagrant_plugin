@@ -14,6 +14,11 @@ module SampleVagrantPlugin
       Config
     end
 
+    config("apt_get", :provisioner) do
+      require_relative "sample_vagrant_plugin/provisioner_config"
+      ProvisionerConfig
+    end
+
     provisioner "apt_get" do
       require_relative "sample_vagrant_plugin/provisioner"
       Provisioner
